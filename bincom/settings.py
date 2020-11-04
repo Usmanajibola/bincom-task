@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'x&(-w%5@hlm89a99-t%u*tvdks(109d1dmr@=1xb+4k_gs=p+2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['https://git.heroku.com/bincom-task.git', 'localhost']
+ALLOWED_HOSTS = ['https://git.heroku.com/bincom-task.git', 'localhost', 'us-cdbr-east-02.cleardb.com']
 
 
 # Application definition
@@ -81,13 +81,18 @@ WSGI_APPLICATION = 'bincom.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'bincom',
-        'USER':'usman',
-        'PASSWORD':'usman123',
-        'HOST':'localhost',
-        'PORT':'3306'
+        'NAME': 'heroku_5cc669c6db5dc31',
+        'USER':'b05a65661c1d74',
+        'PASSWORD':'baf70217',
+        'HOST':'us-cdbr-east-02.cleardb.com',
+        'PORT':'3306',
+        'OPTIONS': {
+        'sql_mode': 'STRICT_TRANS_TABLES',
+        'autocommit':True
+        }
     }
 }
+
 
 
 # Password validation
