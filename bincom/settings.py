@@ -25,7 +25,7 @@ SECRET_KEY = 'x&(-w%5@hlm89a99-t%u*tvdks(109d1dmr@=1xb+4k_gs=p+2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://git.heroku.com/bincom-task.git', 'localhost']
 
 
 # Application definition
