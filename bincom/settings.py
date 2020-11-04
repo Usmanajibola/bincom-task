@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'x&(-w%5@hlm89a99-t%u*tvdks(109d1dmr@=1xb+4k_gs=p+2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['https://bincom-task.herokuapp.com/', 'localhost', 'us-cdbr-east-02.cleardb.com']
+ALLOWED_HOSTS = ['bincom-task.herokuapp.com/', 'localhost', 'us-cdbr-east-02.cleardb.com', '0.0.0.0']
 
 
 # Application definition
