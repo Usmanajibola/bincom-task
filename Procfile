@@ -1,1 +1,1 @@
-web: gunicorn bincom.wsgi
+web: gunicorn bincom.wsgi 
