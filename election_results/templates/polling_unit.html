@@ -1,0 +1,7 @@
+{%extends 'index.html'%}
+
+{%block content%}
+{%for result in results%}
+<h5>{{result.party_abbreviation}}:{{result.party_score}}</h5>
+{%endfor%}
+{%endblock%}

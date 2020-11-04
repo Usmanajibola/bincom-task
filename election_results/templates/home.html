@@ -1,0 +1,11 @@
+{%extends 'index.html'%}
+
+
+{%block content%}
+
+    <h2>How do you want to get 2011 voting information??</h2>
+
+    <a class="btn btn-primary text-white my-3" href="{%url 'election_results:units'%}">By Polling Unit</a><br>
+    <a class="btn btn-dark text-white my-3" href="{%url 'election_results:lgas'%}">By LGA</a><br>
+    <a class="btn btn-primary btn-warning my-3" href="{%url 'election_results:all_parties'%}"> Get total for each Polling Unit</a>
+{%endblock%}
